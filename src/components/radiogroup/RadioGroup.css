@@ -1,0 +1,30 @@
+.radioGroupContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.radioGroupOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: 90px;
+  margin-left: 6px;
+}
+
+/* Checkbox custom culor */
+input[type="radio"] {
+  margin-left: 10px;
+  appearance: none;
+
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid var(--pink);
+}
+
+input[type="radio"]:checked {
+  background: var(--pink);
+}

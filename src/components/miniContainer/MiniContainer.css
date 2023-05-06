@@ -1,0 +1,15 @@
+.miniContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex: 1;
+  gap: 4%;
+}
+
+@media only screen and (max-width: 600px) {
+  .miniContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}

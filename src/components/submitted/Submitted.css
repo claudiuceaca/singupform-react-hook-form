@@ -1,0 +1,15 @@
+.submittedMessage {
+  position: absolute;
+  background: var(--pink);
+  color: white;
+  border-radius: 1rem;
+  width: 300px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

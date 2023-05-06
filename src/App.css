@@ -1,0 +1,69 @@
+.background {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 0.2861519607843137) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  min-width: 540px;
+  margin-inline: auto;
+  padding-inline: 1.4rem;
+  padding-block: 1.2rem 2.2rem;
+  border-radius: 1rem;
+  background: var(--whiteColor);
+  border: 1px solid rgb(211, 208, 208);
+  position: relative;
+  -webkit-transition: all 0.3s ease-in; /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.3s ease-in; /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-in; /* Opera 10.50–12.00 */
+  transition: all 0.3s ease-in; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.container h1 {
+  margin-bottom: 25px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--whiteColor);
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  background: rgb(243, 243, 243);
+  color: #3e3b3c;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+input[type="button"] {
+  flex: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .background {
+    padding-block: 7%;
+  }
+
+  .container {
+    min-width: 85%;
+  }
+}
+
+/* ----------------------------------- */
+.secondaryButton {
+  color: var(--pinkDarker);
+}
